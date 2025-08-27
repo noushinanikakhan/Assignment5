@@ -25,30 +25,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <body>
-<nav class="w-[1920px] h-[100px] bg-white mt-5 ml-10 mb-5">
-<div class="flex w-[196px] h=[50px]">
-  <img class="hidden sm:block" src="assets/rsz_1logo.png" alt="">  
-  <img class="" src="assets/" alt="">
-  <img class="" src="assets/" alt="">
-  <h3 class="text-[#006747] font-bold text-xl p-2 hidden sm:block">Emergency <br> Service</h3> 
+<nav class="sm: w-full w-[1440px] h-[100px] bg-white mt-7 ml-10 mr-10 mb-10 sm:mb-0 flex flex-col sm:flex-row justify-between items-center">
+<div class="flex items-center w-[196px] h-[50px] mb-4 sm:mb-0  ">
+  <img class=" " src="assets/rsz_1logo.png" alt="">  
+  <h3 class="text-[#006747] font-bold text-2xl p-2  ">Emergency <br> Service</h3> 
 </div>
 
-<div>    
+<div class="mr-15 gap-3 p-3"> 
+<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#41ff6b1a] rounded-full">
+    <img src="assets/rsz_heart.png" alt="">
+</button>
+<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#41ff6b1a] rounded-full">
+    <img src="assets/rsz_coin.png" alt="">
+</button>
+<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#00a63e] rounded-full">Copy</button>   
 </div>
 </nav>
 
 <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]
 flex flex-col justify-center items-center text-align-center p-5">
     <img src="assets/rsz_logo-dark.png" alt="">
-    <h1 class="text-white font-bold text-xl p-2">Emergency Service Directory</h1>
+    <h1 class="text-white font-bold text-4xl p-2 sm: text-center">Emergency Service Directory</h1>
     <p class="text-white font-semibold text-xs p-2 text-align-center sm: text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
 
 </section>
 
-<section class="bg-[#dfefff] flex h-full min-h-screen py-1">
+<section class="bg-[#dfefff]  h-full sm:mb-0 flex flex-col sm:flex-row justify-between ">
     
 <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:p-4 lg:p-8 ">
-    <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden  ">
+    <div class="bg-white h-full p-5 rounded-xl shadow-lg overflow-hidden  ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/emergency.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">National Emergency Number</h2>
@@ -58,16 +63,16 @@ flex flex-col justify-center items-center text-align-center p-5">
         <div class="w-full p-2 mx-auto flex space-x-2">
             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl
             flex items-center justify-center flex-1 py-2
-            bg-white text-xs rounded-xl">
+            bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl
             flex items-center justify-center flex-1 py-2
-            bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-blue-200 h-12 rounded-xl " src="assets/police.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Police Helpline Number</h2>
@@ -77,14 +82,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <div class="w-full p-2 mx-auto flex space-x-2">
             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl
              flex items-center justify-center flex-1 py-2
-            bg-white text-xs rounded-xl">
+            bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/fire-service.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Fire Service Number</h2>
@@ -92,14 +97,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">999</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">Fire</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/ambulance.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Ambulance Service</h2>
@@ -107,14 +112,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">1994-999999</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">Health</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/emergency.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Women & Child Helpline</h2>
@@ -122,14 +127,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">109</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">Help</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/emergency.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Anti-Corruption Helpline</h2>
@@ -137,14 +142,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">106</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">Govt.</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/emergency.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Electricity Helpline</h2>
@@ -152,14 +157,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">16216</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">Electricity</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/emergency.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Brac Helpline</h2>
@@ -167,14 +172,14 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">16445</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">NGO</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
 
-        <div class="bg-white w-md h-full p-5 rounded-xl shadow-lg overflow-hidden ">
+        <div class="bg-white  h-full p-5 rounded-xl shadow-lg overflow-hidden ">
         <div class="flex justify-between p-5 "><img class="bg-pink-200 h-12 rounded-xl" src="assets/emergency.png" alt=""> 
            <i class="fa-regular fa-heart p-4 filter: brightness-500"></i> </div>
         <h2 class="font-bold px-5 text-lg">Bangladesh Railway Helpline </h2>
@@ -182,9 +187,9 @@ flex flex-col justify-center items-center text-align-center p-5">
         <h1 class="font-bold text-2xl px-5">163</h1>
         <button class="btn btn-xs bg-gray-300  ml-5 rounded-2xl">Travel</button>
         <div class="w-full p-2 mx-auto flex space-x-2">
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-xs rounded-xl">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-white text-base rounded-xl">
              <i class="fa-regular fa-copy p-5"></i>   Copy</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-xs rounded-xl  text-white w-32">
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl  flex items-center justify-center flex-1 py-2 bg-[#00a63e] text-base rounded-xl  text-white w-32">
             <img src="assets/icons8-phone-16.png" alt=""></i> Call</button>
         </div>
     </div>
@@ -193,14 +198,14 @@ flex flex-col justify-center items-center text-align-center p-5">
 
 </div>
 
-    <div class="w-md  ">
-        <div class="flex justify-between bg-white p-5 rounded-xl shadow-lg">
-<div class="flex"> 
-                <i class="fa-regular fa-clock p-1 mt-3"></i>
-                <h3 class="font-bold text-xl p-2"> 
+    <div class="w-md  mt-1 p-8 ">
+        <div class="flex align-middle justify-between bg-white p-2 rounded-xl shadow-lg">
+<div class="flex items-center "> 
+                <i class="fa-regular fa-clock p-2 mt-3"></i>
+                <h3 class="font-bold text-base p-3 "> 
                 Call History</h3>
 </div>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#00a63e] text-xs rounded-xl  text-white w-40">Clear</button>
+            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#00a63e] text-base rounded-4xl  text-white w-30">Clear</button>
 
         </div>
 

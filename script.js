@@ -2,59 +2,170 @@
 
 // call emergency
 
+let currentCoinValue =100;
+let callHistoryData=[];
+
 document.getElementById("call-emergency").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling National Emergency Service 999") 
 
-    return;
+   const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+
+    alert ("Calling National Emergency Service 999");
+
+    const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+
+    const data= {name:"National Emergency Number",
+       date: new Date().toLocaleTimeString()  }
+
+       callHistoryData.push(data)
 })
 
 document.getElementById("call-police").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Police 999") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Police 999");
+
+    const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+
+        const data= {name:"Police Helpline Number",
+       date: new Date().toLocaleTimeString()  }
+
+       callHistoryData.push(data)
 })
+
 
 document.getElementById("call-fire").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Fire Service 999") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Fire Service 999");
+
+   const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
 })
 
 document.getElementById("call-Ambulance").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Ambulance 1994-999999") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Ambulance 1994-999999");
+    
+     const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+ 
 })
 
 document.getElementById("call-WomenChild").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Women & Child Helpline 109") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+
+    alert ("Calling Women & Child Helpline 109");
+
+     const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+    
 })
 
 document.getElementById("call-Anti-Corruption").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Anti-Corruption 106") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Anti-Corruption 106");
+
+     const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+   
 })
 
 document.getElementById("call-Electricity").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Electricity 16216") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Electricity 16216");
+
+     const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+ 
 })
 
 document.getElementById("call-Brac").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Brac 16445") 
-    return;
+
+           const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Brac 16445");
+    
+     const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+    
 })
 
 document.getElementById("call-Railway").addEventListener("click",function(e)
 {e.preventDefault()
-    alert ("Calling Bangladesh Railway 163") 
-    return;
+
+       const currentCoinValue = parseInt(document.getElementById("copy-coin").innerText); 
+
+    if (currentCoinValue<20){
+        alert ("You don't have enough coin. You must have minimum 20 coins to call.")
+         return;
+    }
+    alert ("Calling Bangladesh Railway 163");
+
+     const changeCoin = currentCoinValue - 20;
+    
+    document.getElementById("copy-coin").innerText = changeCoin;
+  
 })
 
 // copy button function

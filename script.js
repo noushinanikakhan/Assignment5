@@ -21,11 +21,40 @@ document.getElementById("call-emergency").addEventListener("click",function(e)
     
     document.getElementById("copy-coin").innerText = changeCoin;
 
-    const data= {name:"National Emergency Number",
-       date: new Date().toLocaleTimeString()  }
+    const data= {
+        name:"National Emergency Number",
+        number: "999",
+       date: new Date().toLocaleTimeString()
+    };
 
        callHistoryData.push(data)
-})
+       newCallHistory();
+        // console.log(callHistoryData)
+
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 p-4 mb-2">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+})     
+
 
 document.getElementById("call-police").addEventListener("click",function(e)
 {e.preventDefault()
@@ -42,12 +71,40 @@ document.getElementById("call-police").addEventListener("click",function(e)
     
     document.getElementById("copy-coin").innerText = changeCoin;
 
-        const data= {name:"Police Helpline Number",
-       date: new Date().toLocaleTimeString()  }
+
+const data= {
+        name:"Police Helpline Number",
+        number: "999",
+       date: new Date().toLocaleTimeString()
+    };
 
        callHistoryData.push(data)
-})
+       newCallHistory();
+        // console.log(callHistoryData)
 
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+     
+})
 
 document.getElementById("call-fire").addEventListener("click",function(e)
 {e.preventDefault()
@@ -63,6 +120,39 @@ document.getElementById("call-fire").addEventListener("click",function(e)
    const changeCoin = currentCoinValue - 20;
     
     document.getElementById("copy-coin").innerText = changeCoin;
+
+const data= {
+        name:"Fire Service Number",
+        number: "999",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+     
 })
 
 document.getElementById("call-Ambulance").addEventListener("click",function(e)
@@ -79,8 +169,39 @@ document.getElementById("call-Ambulance").addEventListener("click",function(e)
      const changeCoin = currentCoinValue - 20;
     
     document.getElementById("copy-coin").innerText = changeCoin;
- 
-})
+
+const data= {
+        name:"Ambulance Service",
+        number: "1994-999999",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+})     
 
 document.getElementById("call-WomenChild").addEventListener("click",function(e)
 {e.preventDefault()
@@ -97,8 +218,39 @@ document.getElementById("call-WomenChild").addEventListener("click",function(e)
      const changeCoin = currentCoinValue - 20;
     
     document.getElementById("copy-coin").innerText = changeCoin;
-    
-})
+
+const data= {
+        name:"Women & Child Helpline",
+        number: "109",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+  })   
 
 document.getElementById("call-Anti-Corruption").addEventListener("click",function(e)
 {e.preventDefault()
@@ -114,8 +266,39 @@ document.getElementById("call-Anti-Corruption").addEventListener("click",functio
      const changeCoin = currentCoinValue - 20;
     
     document.getElementById("copy-coin").innerText = changeCoin;
+
+const data= {
+        name:"Anti-Corruption Helpline",
+        number: "106",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
    
-})
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+ })    
 
 document.getElementById("call-Electricity").addEventListener("click",function(e)
 {e.preventDefault()
@@ -129,10 +312,39 @@ document.getElementById("call-Electricity").addEventListener("click",function(e)
     alert ("Calling Electricity 16216");
 
      const changeCoin = currentCoinValue - 20;
-    
-    document.getElementById("copy-coin").innerText = changeCoin;
- 
-})
+
+const data= {
+        name:"Electricity Helpline",
+        number: "16216",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+ })    
 
 document.getElementById("call-Brac").addEventListener("click",function(e)
 {e.preventDefault()
@@ -148,8 +360,39 @@ document.getElementById("call-Brac").addEventListener("click",function(e)
      const changeCoin = currentCoinValue - 20;
     
     document.getElementById("copy-coin").innerText = changeCoin;
-    
-})
+
+const data= {
+        name:"Brac Helpline",
+        number: "16445",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }}
+})     
 
 document.getElementById("call-Railway").addEventListener("click",function(e)
 {e.preventDefault()
@@ -165,9 +408,39 @@ document.getElementById("call-Railway").addEventListener("click",function(e)
      const changeCoin = currentCoinValue - 20;
     
     document.getElementById("copy-coin").innerText = changeCoin;
-  
-})
 
+const data= {
+        name:"Bangladesh Railway Helpline ",
+        number: "163",
+       date: new Date().toLocaleTimeString()
+    };
+
+       callHistoryData.push(data)
+       newCallHistory();
+        // console.log(callHistoryData)
+
+function newCallHistory(){
+  const callHistory=document.getElementById("call-history")
+  callHistory.innerHTML="";
+
+
+    // document.getElementById("call-emergency").addEventListener("click",function() {
+   
+     for (const data of callHistoryData){
+        const div =document.createElement("div")
+        div.innerHTML=`
+               <div class="h-20 rounded-xl bg-[#fafafa]  w-[360px] ml-2">
+    <div class="w-[360px]  flex justify-between items-center  mt-2 pt-2 pl-4">
+  <div class="flex-col">   <h1 class="font-bold ">${data.name}
+</h1>
+     <p>${data.number}</p></div>
+  <div class="pr-2">${data.date}</div>
+  </div>
+  </div>
+        `
+        callHistory.appendChild(div)
+     }} 
+})
 // copy button function
 
 // emergency
@@ -426,15 +699,15 @@ document.getElementById("heart-Railway").addEventListener("click", function() {
 
 // Coin click function
 
-let currentCoin = 0;
+// let currentCoin = 0;
 
-document.getElementById("coin-emergency").addEventListener("click", function() {
+// document.getElementById("coin-emergency").addEventListener("click", function() {
  
-    const currentCoin = parseInt(document.getElementById("coin-btn").innerText) 
+//     const currentCoin = parseInt(document.getElementById("coin-btn").innerText) 
     
-    currentHCount = currentHeart + 1;
+//     currentHCount = currentHeart + 1;
     
-    document.getElementById("heart-btn").innerText = currentHCount;
+//     document.getElementById("heart-btn").innerText = currentHCount;
     
-    console.log("Total heart:", currentHCount);
-});
+//     console.log("Total heart:", currentHCount);
+// });

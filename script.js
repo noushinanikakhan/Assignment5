@@ -441,6 +441,15 @@ function newCallHistory(){
         callHistory.appendChild(div)
      }} 
 })
+
+// clear history button
+
+document.getElementById("clear-history-btn").addEventListener("click",function (){
+    callHistoryData=[];
+    document.getElementById("call-history").innerHTML=""
+  })
+
+
 // copy button function
 
 // emergency

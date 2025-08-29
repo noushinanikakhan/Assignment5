@@ -10,7 +10,10 @@ querySelector selects the first elements in a given CSS selectors and returns a 
 querySelectorAll selects all the elements in a given CSS selectors. It returns a collection containing all matching elements.
 
 2. How do you **create and insert a new element into the DOM**?
-Answer:
+Answer: 1. At first, I will create a new HTML element node with document.createElement().
+2. I will set properties like text, classes etc in that element.
+3. Lastly, I would insert that element into a DOM by using methods like appendChild(), or prepend(), or insertBefore().
+
 
 3. What is **Event Bubbling** and how does it work?
 Answer: Event Bubbling is a default process in which a event triggers in the innermost element and then propagates up to the DOM tree, its parents , grandparents and so on until it reaches it root or DOM object. 

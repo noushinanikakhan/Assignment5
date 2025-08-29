@@ -313,6 +313,8 @@ document.getElementById("call-Electricity").addEventListener("click",function(e)
 
      const changeCoin = currentCoinValue - 20;
 
+     document.getElementById("copy-coin").innerText = changeCoin;
+
 const data= {
         name:"Electricity Helpline",
         number: "16216",
